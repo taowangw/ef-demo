@@ -1,0 +1,19 @@
+{
+    "extends": "./tsconfig",
+    "compilerOptions": {
+      "jsx": "react-jsx",
+      "plugins": [
+        {
+          "transform": "typescript-plugin-styled-components",
+          "type": "config",
+          "ssr": true,
+          "displayName": false
+        }
+      ]
+    },
+    "include": [
+      "src/components/**/*",
+    ],
+    "exclude": ["node_modules", "**/__tests__", "**/__stories__"]
+  }
+  
